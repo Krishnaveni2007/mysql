@@ -1,0 +1,3 @@
+select * from students;
+select name,age from students;
+select * from students where age>20;
