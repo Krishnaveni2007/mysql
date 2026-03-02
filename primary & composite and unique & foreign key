@@ -1,0 +1,40 @@
+create table teacher(
+    id int primary key,
+    name varchar(100));
+
+insert into teacher values(1,"veni"),(2,"veni");
+
+create table class(
+    id int,
+    name varchar(100),
+    department varchar(100),
+    primary key(id,department)
+    );
+
+INSERT INTO class VALUES
+(1,"veni","cse"),
+(2,"swathi","aids"),
+(2,"aswin","cse");
+
+CREATE TABLE work(
+    email VARCHAR(100) UNIQUE,
+    id INT
+);
+
+INSERT INTO work VALUES
+("krishnavenimarisamy@gmail.com",1),
+("swathi123@gmail.com",2)
+);
+
+create table department(
+dept_id int primary key,
+dept_name varchar(100)
+);
+
+create table student(
+student_id int primary key,
+student_name varchar(100),
+dept_id int foreign key (dept_id)references department(dept_id);
+
+
+
