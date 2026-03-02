@@ -1,0 +1,6 @@
+select sum(studentid) from students;
+select avg(age) from students;
+select  max(age) from students;
+select  min(age) from students;
+select  studentid,max(age) from students group by age having max(age)>=20;
+select  studentid,max(age) from students group by age order by max(age);
