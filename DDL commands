@@ -3,3 +3,7 @@ create table students(
     name varchar(50),
     age INT
     );
+alter table students add column email varchar(100);
+drop table students;
+truncate table students;
+
